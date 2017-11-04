@@ -5,9 +5,7 @@
 <!-- ここにページ毎のコンテンツを書く -->
     <h1>タスク新規作成ページ</h1>
 
-    <!-- Form::model() でフォームを開始 -->
     {!! Form::model($task, ['route' => 'tasks.store']) !!}
-    <!-- Form::model() は第一引数に対象となる Model のインスタンスを取り、第二引数は連想配列を取ります。-->
     
         {!! Form::label('status', 'ステータス:') !!}
         {!! Form::text('status') !!}
